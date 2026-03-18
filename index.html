@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Chatbot - Your Health Assistant</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="chat-interface">
+            <!-- Header -->
+            <div class="header">
+                <div class="header-content">
+                    <h1>Healthcare Chatbot</h1>
+                    <p>Your Personal Health Assistant</p>
+                </div>
+                <button id="clearBtn" class="btn-clear">Clear Chat</button>
+            </div>
+
+            <!-- Chat Box -->
+            <div class="chat-box" id="chatBox">
+                <div class="message bot-message">
+                    <div class="message-content">
+                        <p>👋 Hello! I'm your healthcare assistant. I can help you with:</p>
+                        <ul>
+                            <li>General health information</li>
+                            <li>Symptom descriptions</li>
+                            <li>Wellness tips</li>
+                            <li>When to see a doctor</li>
+                        </ul>
+                        <p><strong>Note:</strong> I'm not a replacement for professional medical advice. Please consult a doctor for serious concerns.</p>
+                    </div>
+                    <span class="message-time">Just now</span>
+                </div>
+            </div>
+
+            <!-- Input Area -->
+            <div class="input-area">
+                <div class="input-wrapper">
+                    <input 
+                        type="text" 
+                        id="messageInput" 
+                        placeholder="Ask me about your health..."
+                        class="message-input"
+                    >
+                    <button id="sendBtn" class="btn-send">Send</button>
+                </div>
+                <div class="typing-indicator" id="typingIndicator" style="display: none;">
+                    <span></span><span></span><span></span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sidebar with Options -->
+        <div class="sidebar">
+            <h3>Quick Topics</h3>
+            <button class="topic-btn" data-topic="cold">
+                🤒 Cold & Flu
+            </button>
+            <button class="topic-btn" data-topic="fever">
+                🌡️ Fever
+            </button>
+            <button class="topic-btn" data-topic="headache">
+                😕 Headache
+            </button>
+            <button class="topic-btn" data-topic="sleep">
+                😴 Sleep Issues
+            </button>
+            <button class="topic-btn" data-topic="diet">
+                🥗 Nutrition
+            </button>
+            <button class="topic-btn" data-topic="exercise">
+                💪 Exercise
+            </button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
